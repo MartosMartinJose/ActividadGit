@@ -1,0 +1,21 @@
+{
+  "name": "Calculadora por Jose Martos Martin",
+  "homepage": "https://github.com/MartosMartinJose/ActividadGit",
+  "description": "Proyecto de Calculadora con Bootstrap y JavaScript",
+  "main": "index.html",
+  "authors": [
+    "Jose Martos Martin"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
