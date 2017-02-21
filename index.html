@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
     <style>
 		.vista{
-			height:25px;
+			text-align:right;
+			height:90px;
 			border:1px solid black;
 			background-color:grey;
 			color:white;
@@ -18,59 +19,73 @@
 <body>
     <div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-7 col-xs-offset-1 vista" id="vista"></div>
+			<div class="col-xs-3 col-xs-offset-3 vista" id="vista">
+				<div id="a" ></div>
+				<div id="op" ></div>
+				<div id="b" ></div>
+				<div id="resul"></div>
+			</div>
         </div>
         <div class="row">
-			<div class="col-xs-4">
-				<button id="b7" class="btn btn-default">7</button>
+			<div class="col-xs-1 col-xs-offset-3 text-right">
+				<button id="b7" value="7" class="btn btn-default">7</button>
 			</div>
-			<div class="col-xs-4">
-				<button id="b8" class="btn btn-default">8</button>
+			<div class="col-xs-1 ">
+				<button id="b8" value="8" class="btn btn-default">8</button>
 			</div>
-			<div class="col-xs-4">
-				<button id="b9" class="btn btn-default">9</button>
+			<div class="col-xs-1">
+				<button id="b9" value="9" class="btn btn-default">9</button>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-4">
-				<button id="b4" class="btn btn-default">4</button>
+            <div class="col-xs-1 col-xs-offset-3 text-right">
+				<button id="b4" value="4" class="btn btn-default">4</button>
 			</div>
-			<div class="col-xs-4">
-				<button id="b5" class="btn btn-default">5</button>
+			<div class="col-xs-1">
+				<button id="b5" value="5" class="btn btn-default">5</button>
 			</div>
-			<div class="col-xs-4">
-				<button id="b6" class="btn btn-default">6</button>
+			<div class="col-xs-1 ">
+				<button id="b6" value="6" class="btn btn-default">6</button>
 			</div>
 		</div>
 		<div class="row">
-            <div class="col-xs-4">
-				<button id="b1" class="btn btn-default">1</button>
+            <div class="col-xs-1 col-xs-offset-3 text-right">
+				<button id="b1" value="1" class="btn btn-default">1</button>
             </div>
-            <div class="col-xs-4">
-				<button id="b2" class="btn btn-default">2</button>
+            <div class="col-xs-1">
+				<button id="b2" value="2" class="btn btn-default">2</button>
 			</div>
-			<div class="col-xs-4">
-				<button id="b3" class="btn btn-default">3</button>
+			<div class="col-xs-1 ">
+				<button id="b3" value="3" class="btn btn-default">3</button>
             </div>
        </div>
        <div class="row">
-		   <div class="col-xs-4">
-				<button id="menos" class="btn btn-default">-</button>
+		   <div class="col-xs-1 col-xs-offset-3 text-right">
+				<button id="menos" value="-" class="btn btn-default opera">-</button>
 			</div>
-			<div class="col-xs-4">
-				<button id="b0" class="btn btn-default">0</button>
+			<div class="col-xs-1">
+				<button id="b0" value="0" class="btn btn-default">0</button>
 			</div>
-			<div class="col-xs-4">
-				<button id="mas" class="btn btn-default">+</button>
+			<div class="col-xs-1">
+				<button id="mas" value="+" class="btn btn-default opera">+</button>
 			</div>
         </div>
         <div class="row">
-			<div class="col-xs-5 col-xs-offset-2">
+			<div class="col-xs-2 col-xs-offset-3 text-right">
 				<button id="igual" class="btn btn-primary btn-block">=</button>
+			</div>
+			<div class="col-xs-1">
+				<button id="limp" class="btn btn-warning btn-block">C</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 col-xs-offset-3">
+				<p class="bg-danger" id="error"></p>
 			</div>
 		</div>
     </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/bootstrap/src/jquery.js"></script>
+    <script src="funcionalidad.js"></script>
 </body>
 </html>
