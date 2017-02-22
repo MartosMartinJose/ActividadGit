@@ -14,7 +14,14 @@ $("#igual").click(function(){
 		}
 		console.log(resultado);
 		$("#error").text("");
-		$("#resul").text(resultado);
+		$("#a").text(resultado);
+        $("#b").text("");
+        $("#op").text("");
+        b=null;
+        c=2;
+        operando="";
+        a=resultado;
+        
 	}else{
 		$("#error").text("Debes definir 2 valores para realizar una operacion");
 	}
