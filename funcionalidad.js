@@ -67,6 +67,7 @@ $(function(){
 
 	$(".opera").click(function(){
 		console.log("opera");
+		console.log("opera a: "+a+" opera b: "+b);
 		if (operando=="" && a!=null){
 			console.log("ope1");
 			operando=this.value;
@@ -104,9 +105,9 @@ $(function(){
 			
 		}
 	});
-});
-
-function limpiar(){
+	
+	function limpiar(){
+	console.log("limpiando");
 	$("#a").text("");
 	$("#b").text("");
 	$("#op").text("");
@@ -115,5 +116,8 @@ function limpiar(){
 	b=null;
 	c=2;
 	$("#error").text("");
-}
+	}
+});
+
+
 
